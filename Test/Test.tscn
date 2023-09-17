@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgotwpqlmmpve"]
+
+[ext_resource type="PackedScene" uid="uid://bqp3v1viw6h70" path="res://Scene/RoleScene/Award/Award.tscn" id="1_2psxu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n2v7s"]
+size = Vector2(859, 90.25)
+
+[node name="Test" type="CharacterBody2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(552, 575)
+shape = SubResource("RectangleShape2D_n2v7s")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1207, 480)
+shape = SubResource("RectangleShape2D_n2v7s")
+
+[node name="Award" parent="." instance=ExtResource("1_2psxu")]
+position = Vector2(512, 476)

@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://bniqnxdrf7ety"]
+
+[ext_resource type="Script" path="res://Scene/RoleScene/Award/Attack/Arrow.gd" id="1_bl7f0"]
+[ext_resource type="Texture2D" uid="uid://dmqwimjj0o6eh" path="res://Source/Elementals_Leaf_ranger_Free_v1.0/animations/PNG/projectiles_and_effects/arrow/arrow_.png" id="1_qteqs"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_i2grt"]
+radius = 2.0
+
+[node name="Attack" type="Area2D"]
+script = ExtResource("1_bl7f0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_qteqs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(14, -1)
+shape = SubResource("CircleShape2D_i2grt")

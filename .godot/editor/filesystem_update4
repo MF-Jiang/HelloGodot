@@ -1,0 +1,5 @@
+res://Test/Test.tscn
+res://Scene/RoleScene/Award/Award.tscn
+res://Scene/RoleScene/Award/Award.gd
+res://Scene/RoleScene/Award/Attack/Attack.tscn
+res://Scene/RoleScene/Award/Attack/Arrow.gd
